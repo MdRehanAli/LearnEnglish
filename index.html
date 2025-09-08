@@ -29,61 +29,66 @@
     <!-- Header Section  -->
     <header>
         <!-- Navbar Section  -->
-        <nav class="flex justify-between items-center mx-auto bg-[#BADEFF42]">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+        <nav class="bg-[#BADEFF42] border-b-2 border-[#422AD510] px-5 md:px-10">
+            <div class="flex justify-between items-center mx-auto max-w-7xl py-3">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li>
+                                <a class="btn " href=""><span><i class="fa-solid fa-circle-question"></i>
+                                    </span>FAQ</a>
+                            </li>
+                            <li>
+                                <a class="btn " href=""><span><i class="fa-solid fa-book-open"></i>
+                                    </span>Learn</a>
+                            </li>
+                            <li>
+                                <a class="btn " href=""><span><i class="fa-solid fa-right-from-bracket"></i>
+                                    </span>Logout</a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <a class="flex justify-center items-center">
+                        <span class="font-bold bangla-font">ENGLISH</span>
+                        <img src="./assets/logo.png" alt="Logo">
+                        <span class="font-bold bangla-font">শিখো</span>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 space-x-4">
                         <li>
-                            <a class="btn " href=""><span><i class="fa-solid fa-circle-question"></i>
+                            <a class="btn  btn-outline btn-primary" href=""><span><i
+                                        class="fa-solid fa-circle-question"></i>
                                 </span>FAQ</a>
                         </li>
                         <li>
-                            <a class="btn " href=""><span><i class="fa-solid fa-book-open"></i>
+                            <a class="btn  btn-outline btn-primary" href=""><span><i class="fa-solid fa-book-open"></i>
                                 </span>Learn</a>
                         </li>
                         <li>
-                            <a class="btn " href=""><span><i class="fa-solid fa-right-from-bracket"></i>
+                            <a class="btn  btn-outline btn-primary" href=""><span><i
+                                        class="fa-solid fa-right-from-bracket"></i>
                                 </span>Logout</a>
                         </li>
                     </ul>
                 </div>
-                <a class="flex justify-center items-center">
-                    <span class="font-bold bangla-font">ENGLISH</span>
-                    <img src="./assets/logo.png" alt="Logo">
-                    <span class="font-bold bangla-font">শিখো</span>
-                </a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 space-x-4">
-                    <li>
-                        <a class="btn " href=""><span><i class="fa-solid fa-circle-question"></i>
-                            </span>FAQ</a>
-                    </li>
-                    <li>
-                        <a class="btn " href=""><span><i class="fa-solid fa-book-open"></i>
-                            </span>Learn</a>
-                    </li>
-                    <li>
-                        <a class="btn " href=""><span><i class="fa-solid fa-right-from-bracket"></i>
-                            </span>Logout</a>
-                    </li>
-                </ul>
             </div>
         </nav>
 
         <!-- Banner Section  -->
         <section class="w-11/12 flex flex-col-reverse md:flex-row justify-between items-center gap-10 mx-auto py-10">
             <div class="content flex-1 text-center md:text-left">
-                <h1 class="text-5xl font-bold mb-8"><span class="">English</span> is Easy</h1>
-                <p>আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
+                <h1 class="text-5xl font-bold mb-8"><span class="text-[#00BCFF]">English</span> is Easy</h1>
+                <p class="bangla-font">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা
+                    বাড়াতে চান, আমাদের
                     Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
             </div>
             <div class="image flex-1">
@@ -94,13 +99,25 @@
 
     <!-- Main Section Started  -->
     <main>
+        <!-- Vocabularies Section  -->
+        <section>
+            <h1 class="text-center text-4xl font-bold mb-8"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+            </h1>
+            <div id="lessons" class="flex justify-center items-center flex-wrap gap-5">
 
+            </div>
+        </section>
+
+        <!-- Word container Section  -->
     </main>
 
     <!-- Footer Section Started  -->
     <footer>
 
     </footer>
+
+    <!-- JS File Linked -->
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
