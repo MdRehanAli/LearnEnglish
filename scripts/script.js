@@ -3,6 +3,13 @@ const createElement = (arr) => {
     return htmlElement.join(" ");
 }
 
+// Speak Vocabularies features 
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // English
+  window.speechSynthesis.speak(utterance);
+}
+
 // Spinner 
 const manageSpinner = (status) => {
     if (status == true) {
@@ -14,6 +21,8 @@ const manageSpinner = (status) => {
         document.getElementById("spinner").classList.add("hidden");
     }
 }
+
+
 
 
 const loadLessons = () => {
@@ -102,7 +111,7 @@ const displayLevelWord = (words) => {
                 <div>"${word.meaning ? word.meaning : "meaning পাওয়া যাইনি"} / ${word.pronunciation ? word.pronunciation : "pronunciation পাওয়া যাইনি"}"</div>
                 <div class="flex justify-between items-center py-16">
                     <button onclick="loadWordDetail(${word.id})" class="btn bg-[#1A91FF1A]"><i class="fa-solid fa-circle-info"></i></button>
-                    <button class="btn bg-[#1A91FF1A]"><i class="fa-solid fa-volume-high"></i></button>
+                    <button onclick="pronounceWord('${word.word}')" class="btn bg-[#1A91FF1A]"><i class="fa-solid fa-volume-high"></i></button>
                 </div>
             </div>
         `
@@ -134,3 +143,22 @@ loadLessons();
 
 
 // Search Functionality 
+
+document.getElementById('btn-search').addEventListener("click", () => {
+    removeActive();
+    const input = document.getElementById('input-search');
+    const searchValue = input.value.trim().toLowerCase();
+
+    console.log(searchValue);
+    fetch('https://openapi.programming-hero.com/api/words/all')
+        .then((res) => res.json())
+        .then((data) => {
+            const allWords = data.data;
+            console.log(allWords)
+
+            const filterWords = allWords.filter((word) =>
+                word.word.toLowerCase().includes(searchValue)
+            );
+            displayLevelWord(filterWords);
+        })
+})
