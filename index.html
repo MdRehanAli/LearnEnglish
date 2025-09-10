@@ -29,56 +29,59 @@
     <!-- Header Section  -->
     <header>
         <!-- Navbar Section  -->
-        <nav class="bg-[#BADEFF42] border-b-2 border-[#422AD510] px-5 md:px-10">
-            <div class="flex justify-between items-center mx-auto max-w-7xl py-3">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+        <nav class="bg-[#BADEFF42] border-b-2 border-[#422AD510] ">
+            <div class="w-11/12 mx-auto">
+                <div class="flex justify-between items-center py-3">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                                <li>
+                                    <a class="btn " href=""><span><i class="fa-solid fa-circle-question"></i>
+                                        </span>FAQ</a>
+                                </li>
+                                <li>
+                                    <a class="btn " href=""><span><i class="fa-solid fa-book-open"></i>
+                                        </span>Learn</a>
+                                </li>
+                                <li>
+                                    <a class="btn " href=""><span><i class="fa-solid fa-right-from-bracket"></i>
+                                        </span>Logout</a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <a class="flex justify-center items-center">
+                            <span class="font-bold bangla-font">ENGLISH</span>
+                            <img src="./assets/logo.png" alt="Logo">
+                            <span class="font-bold bangla-font">শিখো</span>
+                        </a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 space-x-4">
                             <li>
-                                <a class="btn " href=""><span><i class="fa-solid fa-circle-question"></i>
+                                <a class="btn  btn-outline btn-primary" href=""><span><i
+                                            class="fa-solid fa-circle-question"></i>
                                     </span>FAQ</a>
                             </li>
                             <li>
-                                <a class="btn " href=""><span><i class="fa-solid fa-book-open"></i>
+                                <a class="btn  btn-outline btn-primary" href=""><span><i
+                                            class="fa-solid fa-book-open"></i>
                                     </span>Learn</a>
                             </li>
                             <li>
-                                <a class="btn " href=""><span><i class="fa-solid fa-right-from-bracket"></i>
+                                <a class="btn  btn-outline btn-primary" href=""><span><i
+                                            class="fa-solid fa-right-from-bracket"></i>
                                     </span>Logout</a>
                             </li>
                         </ul>
                     </div>
-                    <a class="flex justify-center items-center">
-                        <span class="font-bold bangla-font">ENGLISH</span>
-                        <img src="./assets/logo.png" alt="Logo">
-                        <span class="font-bold bangla-font">শিখো</span>
-                    </a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 space-x-4">
-                        <li>
-                            <a class="btn  btn-outline btn-primary" href=""><span><i
-                                        class="fa-solid fa-circle-question"></i>
-                                </span>FAQ</a>
-                        </li>
-                        <li>
-                            <a class="btn  btn-outline btn-primary" href=""><span><i class="fa-solid fa-book-open"></i>
-                                </span>Learn</a>
-                        </li>
-                        <li>
-                            <a class="btn  btn-outline btn-primary" href=""><span><i
-                                        class="fa-solid fa-right-from-bracket"></i>
-                                </span>Logout</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
@@ -127,7 +130,7 @@
         </section>
 
         <!-- Word container Section  -->
-        <section id="word-section" class="bg-gray-100 p-10 w-11/12 mx-auto my-12 grid grid-cols-3 gap-7">
+        <section id="word-section" class="bg-gray-100 p-10 w-11/12 mx-auto my-12 grid grid-cols-3 gap-7 rounded-xl">
             <!-- Card single  -->
 
             <div class="text-center col-span-full rounded-xl py-10 space-y-6 bangla-font">
@@ -155,6 +158,73 @@
                 </div>
             </div>
         </dialog>
+
+        <!-- Frequently Asked Questions -->
+        <section class="w-11/12 mx-auto">
+            <h1 class="text-center text-4xl font-bold mb-8"><span class="text-[#00BCFF]">Frequently</span> Asked
+                Questions</h1>
+
+            <!-- Faq  -->
+
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">1. How can I start learning English on this website?</div>
+                <div class="collapse-content text-sm text-[#62748E]">Getting started is easy! Simply browse our vocabulary lessons,
+                    word lists, and practice exercises. You can begin at the beginner level or choose a topic that suits
+                    your current skills. Each lesson includes examples, quizzes, and pronunciation support.</div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">2. Is this website free to use?</div>
+                <div class="collapse-content text-sm text-[#62748E]">
+                    Some features, like daily word tracking and progress reports, may require a free account. However,
+                    you can still access many lessons and word lists without signing up.
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">3. Is this website suitable for beginners?</div>
+                <div class="collapse-content text-sm text-[#62748E]">
+                    Yes! Our lessons are designed for learners of all levels. If you’re a beginner, you’ll find simple
+                    word lists, easy examples, and step-by-step practice to build your vocabulary.
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">4. How can I improve my vocabulary faster?</div>
+                <div class="collapse-content text-sm text-[#62748E]">
+                    The best way is to practice regularly. Use our daily word challenge, take quizzes, and try to make
+                    sentences with new words you learn. Repetition and practice are the keys to improvement.
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">5. Can I practice pronunciation here?</div>
+                <div class="collapse-content text-sm text-[#62748E]">
+                    Yes! Many of our lessons include audio examples so you can hear how each word is pronounced and
+                    practice along.
+
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">6. Is the website free to use?</div>
+                <div class="collapse-content text-sm text-[#62748E]">
+                    Most of our content is free. Some advanced features, like personalized learning paths or premium
+                    word packs, may require an upgrade, but basic vocabulary lessons are always free.
+
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">7. Can I use this website on my phone?</div>
+                <div class="collapse-content text-sm text-[#62748E]">
+
+                    Absolutely! Our website is mobile-friendly, so you can learn new words anytime, anywhere on your
+                    smartphone or tablet.
+                </div>
+            </div>
+        </section>
 
     </main>
 
