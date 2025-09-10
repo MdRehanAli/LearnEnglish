@@ -44,11 +44,11 @@
                             <ul tabindex="0"
                                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                                 <li>
-                                    <a class="btn " href=""><span><i class="fa-solid fa-circle-question"></i>
+                                    <a class="btn " href="#FAQ"><span><i class="fa-solid fa-circle-question"></i>
                                         </span>FAQ</a>
                                 </li>
                                 <li>
-                                    <a class="btn " href=""><span><i class="fa-solid fa-book-open"></i>
+                                    <a class="btn " href="#vocabulary"><span><i class="fa-solid fa-book-open"></i>
                                         </span>Learn</a>
                                 </li>
                                 <li>
@@ -66,12 +66,12 @@
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1 space-x-4">
                             <li>
-                                <a class="btn  btn-outline btn-primary" href=""><span><i
+                                <a class="btn  btn-outline btn-primary" href="#FAQ"><span><i
                                             class="fa-solid fa-circle-question"></i>
                                     </span>FAQ</a>
                             </li>
                             <li>
-                                <a class="btn  btn-outline btn-primary" href=""><span><i
+                                <a class="btn  btn-outline btn-primary" href="#vocabulary"><span><i
                                             class="fa-solid fa-book-open"></i>
                                     </span>Learn</a>
                             </li>
@@ -103,7 +103,7 @@
     <!-- Main Section Started  -->
     <main>
         <!-- Vocabularies Section  -->
-        <section>
+        <section id="vocabulary">
             <h1 class="text-center text-4xl font-bold mb-8"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
             </h1>
             <div id="lessons" class="flex justify-center items-center flex-wrap gap-5">
@@ -160,7 +160,7 @@
         </dialog>
 
         <!-- Frequently Asked Questions -->
-        <section class="w-11/12 mx-auto mb-40">
+        <section id="FAQ" class="w-11/12 mx-auto mb-40">
             <h1 class="text-center text-4xl font-bold mb-8"><span class="text-[#00BCFF]">Frequently</span> Asked
                 Questions</h1>
 
@@ -231,9 +231,9 @@
 
     <!-- Footer Section Started  -->
     <footer class="bg-[#BADEFF42] border-b-2 border-[#422AD510] ">
-        <div class="w-11/12 mx-auto flex justify-between items-end py-24">
+        <div class="w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center md:items-end py-24">
             <div class="space-y-2">
-                <h1 class="flex justify-left items-center">
+                <h1 class="flex justify-center md:justify-left items-center">
                     <span class="font-bold bangla-font">ENGLISH</span>
                     <img src="./assets/logo.png" alt="Logo">
                     <span class="font-bold bangla-font">শিখো</span>
