@@ -22,8 +22,7 @@ const manageSpinner = (status) => {
     }
 }
 
-
-
+// Load Lessons data 
 
 const loadLessons = () => {
     fetch('https://openapi.programming-hero.com/api/levels/all')
